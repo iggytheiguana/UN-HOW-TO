@@ -1,0 +1,10 @@
+input {
+    border:none;
+}
+label:after {
+    content:"\A";
+    white-space: pre;
+}
+button {
+    display:none;
+}

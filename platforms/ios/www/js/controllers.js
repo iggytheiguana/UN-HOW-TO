@@ -13,62 +13,58 @@ angular.module('app.controllers', [])
     $scope.print = function () {
     // URI for the index.html
             
-            /*
-        $('form input').each(function()
-                             {
-                             this.setAttribute('value',this.value);
-                             if (this.checked)
-                             this.setAttribute('checked', 'checked');
-                             else
-                             this.removeAttribute('checked');
-                             });
-             */
-            
-        var page = document.getElementById('printme');
+    var elems = document.getElementById('printme').getElementsByTagName("input");
+    
+    for(var i = 0; i < elems.length; i++)
+    {
+    // set attribute to property value
+    elems[i].setAttribute("value", elems[i].value);
+    }
+    
+    var markup = '<html><head><link rel="stylesheet" href="printstyles.css"></head>' + document.getElementById('printme').innerHTML + '</html>';
 
-        $cordovaPrinter.print(page);
+        
+    var page = document.getElementById('printme');
+    $cordovaPrinter.print(markup);
     };
 
     $scope.pdf = function () {
+            
     var success = function(status) {
             
         cordova.plugins.email.open({
                            to:      'nick.moody@bluelabellabs.com',
-                           subject: 'PDF',
-                           body:    'TEST',
+                           subject: 'Form SG.5',
+                           body:    'This is a test of form SG.5, sent as a PDF via email.',
                            attachments: status
                            });
-    }
+            };
 
     var error = function(status) {
 
+            };
+            
+    var elems = document.getElementById('printme').getElementsByTagName("input");
+
+    for(var i = 0; i < elems.length; i++)
+    {
+    // set attribute to property value
+    elems[i].setAttribute("value", elems[i].value);
     }
     
-    angular.forEach($scope.myForm, function(value, key) {
-                    if (typeof value === 'object' && value.hasOwnProperty('$modelValue'))
-                        value.value = "TEST";
-                        value.attr('value',"TEST");
-                    });
-            
-            /*
-    $('form input').each(function()
-                         {
-                         this.setAttribute('value',this.value);
-                         if (this.checked)
-                         this.setAttribute('checked', 'checked');
-                         else
-                         this.removeAttribute('checked');
-                         });
-             */
-            
-    var markup = "<html>" + document.getElementById('printme').innerHTML + "</html>";
+    var markup = '<html><head><link rel="stylesheet" href="printstyles.css"></head>' + document.getElementById('printme').innerHTML + '</html>';
+     
     window.html2pdf.create(markup,
-                           "~/Documents/test.pdf", // on iOS,
-                           // "test.pdf", on Android (will be stored in /mnt/sdcard/at.modalog.cordova.plugin.html2pdf/test.pdf)
-                           success,
-                           error
-                           );
-    }
+                            "~/Documents/test.pdf", // on iOS,
+                            // "test.pdf", on Android (will be stored in /mnt/sdcard/at.modalog.cordova.plugin.html2pdf/test.pdf)
+                            success,
+                            error
+                            );
+            
+     
+    
+    
+            };
 
     
 })
