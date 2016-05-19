@@ -1,6 +1,6 @@
 <ion-view title="SG.5" id="page3">
     <ion-content padding="true" class="has-header">
-        <form class="list" id="printme" ng-model="myForm">
+        <form id="printme" class="list">
             <h1 id="sG5-heading3" style="color:#000000;">Form SG.5</h1>
             <label class="item item-input" name="lastname">
                 <span class="input-label">Name of Principal (Last): </span>
@@ -70,8 +70,8 @@
                 <span class="input-label">Marital Status: </span>
                 <input type="text" placeholder="">
             </label>
-            <button id="sG5-button1" class="button button-positive  button-block" ng-click="print()">Print</button>
-            <button id="sG5-button2" class="button button-positive  button-block" ng-click="pdf()">Email as PDF</button>
-        </form>
+            </form>
+        <button id="sG5-button1" class="button button-positive  button-block" ng-click="print()">Print</button>
+        <button id="sG5-button2" class="button button-positive  button-block" ng-click="pdf()">Email as PDF</button>
     </ion-content>
 </ion-view>

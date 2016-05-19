@@ -37,20 +37,20 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
-        "id": "ionic-plugin-keyboard.keyboard",
-        "clobbers": [
-            "cordova.plugins.Keyboard"
-        ],
-        "runs": true
-    },
-    {
         "file": "plugins/de.appplant.cordova.plugin.printer/www/printer.js",
         "id": "de.appplant.cordova.plugin.printer.Printer",
         "clobbers": [
             "plugin.printer",
             "cordova.plugins.printer"
         ]
+    },
+    {
+        "file": "plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "id": "ionic-plugin-keyboard.keyboard",
+        "clobbers": [
+            "cordova.plugins.Keyboard"
+        ],
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -63,8 +63,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-whitelist": "1.2.2",
-    "ionic-plugin-keyboard": "2.0.1",
-    "de.appplant.cordova.plugin.printer": "0.7.1"
+    "de.appplant.cordova.plugin.printer": "0.7.1",
+    "ionic-plugin-keyboard": "2.0.1"
 };
 // BOTTOM OF METADATA
 });

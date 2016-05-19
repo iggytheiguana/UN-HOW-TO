@@ -10,15 +10,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
                        
-    
-                       cordova.plugins.email.open({
-                                                  to:      'max@mustermann.de',
-                                                  cc:      'erika@mustermann.de',
-                                                  bcc:     ['john@doe.com', 'jane@doe.com'],
-                                                  subject: 'Greetings',
-                                                  body:    'How are you? Nice greetings from Leipzig'
-                                                  });
-                       
                        
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
