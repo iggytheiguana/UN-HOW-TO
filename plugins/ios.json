@@ -7,33 +7,43 @@
         "files": {}
     },
     "installed_plugins": {
-        "at.modalog.cordova.plugin.html2pdf": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+        "cordova-plugin-apteligent": {
+            "PACKAGE_NAME": "com.bl159"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+            "PACKAGE_NAME": "com.bl159"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+            "PACKAGE_NAME": "com.bl159"
         },
-        "cordova-plugin-email-composer": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.bl159"
+        },
+        "cordova-plugin-print-pdf": {
+            "PACKAGE_NAME": "com.bl159"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+            "PACKAGE_NAME": "com.bl159"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+            "PACKAGE_NAME": "com.bl159"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
-        },
-        "de.appplant.cordova.plugin.printer": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+            "PACKAGE_NAME": "com.bl159"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.bl159ios788934"
+            "PACKAGE_NAME": "com.bl159"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.bl159"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.bl159"
+        },
+        "cordova-plugin-ios-base64": {
+            "PACKAGE_NAME": "com.bl159"
+        }
+    }
 }

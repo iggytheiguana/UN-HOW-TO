@@ -1,0 +1,47 @@
+<ion-view title="Form SG.35" id="page9" style="">
+  <ion-content padding="true" class="has-header">
+    <form id="formSG35-form2" class="list">
+      <ion-checkbox id="formSG35-checkbox1" ng-model="form.Issuance" style="">Issuance</ion-checkbox>
+      <ion-checkbox id="formSG35-checkbox2" ng-model="form.Renewal" style="">Renewal</ion-checkbox>
+      <ion-checkbox id="formSG35-checkbox3" ng-model="form.Duplicate" style="">Duplicate</ion-checkbox>
+      <label class="item item-input" id="formSG35-input1">
+        <input placeholder="Organization" ng-model="form.Organization" type="text">
+      </label>
+      <label class="item item-input" id="formSG35-input2">
+        <input placeholder="First Name" ng-model="form.FirstName" type="text">
+      </label>
+      <label class="item item-input" id="formSG35-input3">
+        <input placeholder="Last Name" ng-model="form.LastName" type="text">
+      </label>
+      <label class="item item-input" id="formSG35-input4">
+        <input placeholder="Head of Chantry / Principal Administration Officer" ng-model="form.Head" type="text">
+      </label>
+      <label class="item item-input" id="formSG35-input5">
+        <input placeholder="Signature" ng-model="form.Signature" type="text">
+      </label>
+      <label class="item item-select" id="formSG35-select1">
+        <span class="input-label">Day</span>
+        <select ng-model="form.DateDay">
+          <option>01</option>
+          <option>02</option>
+        </select>
+      </label>
+      <label class="item item-select" id="formSG35-select2">
+        <span class="input-label">Month</span>
+        <select ng-model="form.DateMonth">
+          <option>01</option>
+          <option>02</option>
+        </select>
+      </label>
+      <label class="item item-select" id="formSG35-select3">
+        <span class="input-label">Year</span>
+        <select ng-model="form.DateYear">
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+        </select>
+      </label>
+      <button id="formSG35-button5" ng-click="printPdf()" class="button button-positive  button-block">Print</button>
+    </form>
+  </ion-content>
+</ion-view>

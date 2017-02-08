@@ -16,19 +16,55 @@ angular.module('app.routes', [])
     controller: 'homeCtrl'
   })
 
-  .state('sG6', {
-    url: '/sg6',
-    templateUrl: 'templates/sG6.html',
-    controller: 'sG6Ctrl'
+  .state('rEFERENCEDOCUMENTS', {
+    url: '/rEFERENCEDOCUMENTS',
+    templateUrl: 'templates/rEFERENCEDOCUMENTS.html',
+    controller: 'rEFERENCEDOCUMENTSCtrl'
   })
 
-  .state('sG5', {
-    url: '/sg5',
-    templateUrl: 'templates/sG5.html',
-    controller: 'sG5Ctrl'
+  .state('cOREUNBODIES', {
+    url: '/cOREUNBODIES',
+    templateUrl: 'templates/cOREUNBODIES.html',
+    controller: 'cOREUNBODIESCtrl'
   })
 
-$urlRouterProvider.otherwise('/home')
+  .state('rESOURCEGUIDE', {
+    url: '/rESOURCEGUIDE',
+    templateUrl: 'templates/rESOURCEGUIDE.html',
+    controller: 'rESOURCEGUIDECtrl'
+  })
+
+  .state('fORMSFORDELEGATES', {
+    url: '/fORMSFORDELEGATES',
+    templateUrl: 'templates/fORMSFORDELEGATES.html',
+    controller: 'fORMSFORDELEGATESCtrl'
+  })
+
+  .state('sAVEDDOCS', {
+    url: '/sAVEDDOCS',
+    templateUrl: 'templates/sAVEDDOCS.html',
+    controller: 'sAVEDDOCSCtrl'
+  })
+
+  .state('pORTALS', {
+    url: '/pORTALS',
+    templateUrl: 'templates/pORTALS.html',
+    controller: 'pORTALSCtrl'
+  })
+
+  .state('help', {
+    url: '/help',
+    templateUrl: 'templates/help.html',
+    controller: 'helpCtrl'
+  })
+
+  .state('formSG35', {
+    url: '/sg35',
+    templateUrl: 'templates/formSG35.html',
+    controller: 'formSG35Ctrl'
+  })
+
+$urlRouterProvider.otherwise('/help')
 
   
 
