@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "cordova-plugin-apteligent.CrittercismJSInterface",
-        "file": "plugins/cordova-plugin-apteligent/www/js/crittercism.js",
-        "pluginId": "cordova-plugin-apteligent",
-        "clobbers": [
-            "window.Crittercism"
-        ]
-    },
-    {
         "id": "cordova-plugin-console.console",
         "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
         "pluginId": "cordova-plugin-console",
@@ -30,6 +22,15 @@ module.exports = [
         "pluginId": "cordova-plugin-device",
         "clobbers": [
             "device"
+        ]
+    },
+    {
+        "id": "cordova-plugin-email-composer.EmailComposer",
+        "file": "plugins/cordova-plugin-email-composer/www/email_composer.js",
+        "pluginId": "cordova-plugin-email-composer",
+        "clobbers": [
+            "cordova.plugins.email",
+            "plugin.email"
         ]
     },
     {
@@ -251,10 +252,10 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-apteligent": "3.2.1",
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-console": "1.0.5",
     "cordova-plugin-device": "1.1.4",
+    "cordova-plugin-email-composer": "0.8.3",
     "cordova-plugin-file": "4.3.2-dev",
     "cordova-plugin-inappbrowser": "1.6.1",
     "cordova-plugin-ios-base64": "1.0.0",

@@ -1,47 +1,60 @@
 <ion-view title="Form SG.35" id="page9" style="">
   <ion-content padding="true" class="has-header">
+    <div>
+      <img src="img/FrpgTsWjRf2uHTMyvdyV_Group.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div id="formSG35-markdown10" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="margin-top:0px;color:#000000;">PROTOCOL AND LIASON SERVICE</p>
+    </div>
+    <div id="formSG35-markdown11" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="margin-top:0px;color:#000000;">REQUEST FOR UNITED NATIONS GROUNDS PASS</p>
+    </div>
+    <div id="formSG35-markdown12" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="margin-top:0px;color:#000000;">For Representatives of the Frente Polisario/Turkish Cypriot Community</p>
+    </div>
     <form id="formSG35-form2" class="list">
       <ion-checkbox id="formSG35-checkbox1" ng-model="form.Issuance" style="">Issuance</ion-checkbox>
       <ion-checkbox id="formSG35-checkbox2" ng-model="form.Renewal" style="">Renewal</ion-checkbox>
       <ion-checkbox id="formSG35-checkbox3" ng-model="form.Duplicate" style="">Duplicate</ion-checkbox>
+      <div id="formSG35-markdown13" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Organization</p>
+      </div>
       <label class="item item-input" id="formSG35-input1">
-        <input placeholder="Organization" ng-model="form.Organization" type="text">
+        <input placeholder="Organization Name" ng-model="form.Organization" type="text">
       </label>
+      <div id="formSG35-markdown14" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">NAME:</p>
+      </div>
+      <div id="formSG35-markdown15" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">First Name:</p>
+      </div>
       <label class="item item-input" id="formSG35-input2">
         <input placeholder="First Name" ng-model="form.FirstName" type="text">
       </label>
+      <div id="formSG35-markdown16" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">Last Name:</p>
+      </div>
       <label class="item item-input" id="formSG35-input3">
         <input placeholder="Last Name" ng-model="form.LastName" type="text">
       </label>
+      <div id="formSG35-markdown17" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Head of Chantry / Principal Administration Officer</p>
+      </div>
       <label class="item item-input" id="formSG35-input4">
         <input placeholder="Head of Chantry / Principal Administration Officer" ng-model="form.Head" type="text">
       </label>
-      <label class="item item-input" id="formSG35-input5">
-        <input placeholder="Signature" ng-model="form.Signature" type="text">
-      </label>
-      <label class="item item-select" id="formSG35-select1">
-        <span class="input-label">Day</span>
-        <select ng-model="form.DateDay">
-          <option>01</option>
-          <option>02</option>
-        </select>
-      </label>
-      <label class="item item-select" id="formSG35-select2">
-        <span class="input-label">Month</span>
-        <select ng-model="form.DateMonth">
-          <option>01</option>
-          <option>02</option>
-        </select>
-      </label>
-      <label class="item item-select" id="formSG35-select3">
-        <span class="input-label">Year</span>
-        <select ng-model="form.DateYear">
-          <option>2016</option>
-          <option>2017</option>
-          <option>2018</option>
-        </select>
+      <div id="formSG35-markdown18" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">
+          <strong>Signature must be added on the printed copy of the document</strong>
+        </p>
+      </div>
+      <label class="item item-input" id="formSG35-input6">
+        <span class="input-label">Date</span>
+        <input placeholder="" ng-model="form.Date" type="date">
       </label>
       <button id="formSG35-button5" ng-click="printPdf()" class="button button-positive  button-block">Print</button>
+      <button id="formSG35-button7" ng-click="email()" class="button button-positive  button-block">Email</button>
+      <button id="formSG35-button6" ng-click="save()" class="button button-light  button-block">Save</button>
     </form>
   </ion-content>
 </ion-view>

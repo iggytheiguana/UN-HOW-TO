@@ -5,19 +5,28 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',])
+angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services','ngCordova'])
 
 .config(function($ionicConfigProvider, $sceDelegateProvider){
   
   $ionicConfigProvider.backButton.previousTitleText(false).text('');
-  $sceDelegateProvider.resourceUrlWhitelist([ 'self','*://www.youtube.com/**', '*://player.vimeo.com/video/**']);
+  $sceDelegateProvider.resourceUrlWhitelist(['self', '*://www.youtube.com/**', '*://player.vimeo.com/video/**']);
+  $ionicConfigProvider.views.maxCache(0);
 
 })
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function () {
 
-    Crittercism.init({ 'iosAppID' : 'fb2b383ecf934de985551f46541e452000555300' , 'androidAppID' : 'bae27c4b31264ceabe7917a108ebc06700555300'});
+    window.plugins.nativepagetransitions.globalOptions.duration = 500;
+    window.plugins.nativepagetransitions.globalOptions.iosdelay = 350;
+    window.plugins.nativepagetransitions.globalOptions.androiddelay = 350;
+    window.plugins.nativepagetransitions.globalOptions.winphonedelay = 350;
+    window.plugins.nativepagetransitions.globalOptions.slowdownfactor = 4;
+    // these are used for slide left/right only currently
+    window.plugins.nativepagetransitions.globalOptions.fixedPixelsTop = 0;
+    window.plugins.nativepagetransitions.globalOptions.fixedPixelsBottom = 0;
+
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
@@ -74,6 +83,37 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
       });
       
       element.bind('click', function (event) {
+
+        var name = event.target.innerHTML;
+
+        var freqDocs;
+        if (window.localStorage.getItem("fad") !== undefined && window.localStorage.getItem("fad") !== null)
+        {
+            freqDocs = JSON.parse(window.localStorage.getItem("fad"));
+        }
+        else
+        {
+            freqDocs = { 'docs': [] };
+        }
+
+
+        var clickedLink = { "href": href, "name": name, "count": 1 };
+        var doesExist = false;
+
+        freqDocs.docs.forEach(function (arrayElement) {
+            if (arrayElement.href == clickedLink.href)
+            {
+                arrayElement.count = arrayElement.count + 1
+                doesExist = true;
+            }
+        });
+        if (doesExist == false && href!="https://twitter.com/UN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" && href!="https://www.instagram.com/unitednations/")
+        {
+            freqDocs.docs.push(clickedLink);
+        }
+
+        var json = JSON.stringify(freqDocs);
+        window.localStorage.setItem("fad", json);
 
         window.open(href, '_system', 'location=yes');
 

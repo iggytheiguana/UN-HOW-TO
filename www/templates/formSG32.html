@@ -1,0 +1,103 @@
+<ion-view title="Form SG.32" id="page14" style="">
+  <ion-content padding="true" class="has-header">
+    <div>
+      <img src="img/FrpgTsWjRf2uHTMyvdyV_Group.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div id="formSG32-markdown130" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="margin-top:0px;color:#000000;">
+        <strong>REQUEST FOR UNITED NATIONS GROUNDS PASS FOR FORMER PERMANENT REPRESENTITIVES</strong>
+      </p>
+    </div>
+    <form id="formSG32-form86" class="list">
+      <ion-checkbox id="formSG32-checkbox9" ng-model="form.issuance" style="">Issuance</ion-checkbox>
+      <ion-checkbox id="formSG32-checkbox10" ng-model="form.renewal" style="">Renewal</ion-checkbox>
+      <ion-checkbox id="formSG32-checkbox11" ng-model="form.duplicate" style="">Duplicate</ion-checkbox>
+      <ion-checkbox id="formSG32-checkbox12" ng-model="form.promotion" style="">Promotion</ion-checkbox>
+      <div id="formSG32-markdown131" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">Country / Organization</p>
+      </div>
+      <label class="item item-input" id="formSG32-input99">
+        <input placeholder="" ng-model="form.country" type="text">
+      </label>
+      <div id="formSG32-markdown132" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">NAME:</p>
+      </div>
+      <div id="formSG32-markdown133" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">First Name:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input100">
+        <input placeholder="" ng-model="form.firstName" type="text">
+      </label>
+      <div id="formSG32-markdown134" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">Last Name:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input101">
+        <input placeholder="" ng-model="form.lastName" type="text">
+      </label>
+      <div id="formSG32-markdown135" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">Diplomatic Rank / Functional Title:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input102">
+        <input placeholder="" ng-model="form.position" type="text">
+      </label>
+      <div id="formSG32-markdown136" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">
+          <strong>SPOUSE (diplomats only):</strong>
+        </p>
+      </div>
+      <div id="formSG32-markdown137" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">First Name:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input103">
+        <input placeholder="" ng-model="form.spouseFirstName" type="text">
+      </label>
+      <div id="formSG32-markdown138" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">Last Name:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input104">
+        <input placeholder="" ng-model="form.spouseLastName" type="text">
+      </label>
+      <div id="formSG32-markdown139" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Head of Chantry/Principal administration officer:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input105">
+        <input placeholder="" ng-model="form.head" type="text">
+      </label>
+      <div id="formSG32-markdown140" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">
+          <strong>Signature and official must be added on the printed copy of the document</strong>.</p>
+      </div>
+      <div id="formSG32-markdown141" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">
+          <strong>This form MUST be accompanied with a signed letter from the current Permanent Representitive or Chargé d'affaires, a.i.</strong>
+        </p>
+      </div>
+      <div id="formSG32-markdown142" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Date:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input106">
+        <input placeholder="" ng-model="form.date" type="date">
+      </label>
+      <div id="formSG32-markdown143" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">
+          <strong>REQUIRED DATES:</strong>
+        </p>
+      </div>
+      <div id="formSG32-markdown144" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Expiration of current pass:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input107">
+        <input placeholder="" ng-model="form.expirationDate" type="date">
+      </label>
+      <div id="formSG32-markdown145" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Desired expiration of pass to be issued:</p>
+      </div>
+      <label class="item item-input" id="formSG32-input108">
+        <input placeholder="" ng-model="form.desiredExpirationDate" type="date">
+      </label>
+      <button id="formSG32-button14" ng-click="printPdf()" class="button button-positive  button-block">Print</button>
+      <button id="formSG32-button15" ng-click="email()" class="button button-positive  button-block">Email</button>
+      <button id="formSG32-button16" ng-click="save()" class="button button-light  button-block">Save</button>
+    </form>
+  </ion-content>
+</ion-view>

@@ -59,10 +59,46 @@ angular.module('app.routes', [])
   })
 
   .state('formSG35', {
-    url: '/sg35',
+    url: '/sg35?id',
     templateUrl: 'templates/formSG35.html',
     controller: 'formSG35Ctrl'
   })
+
+  .state('formSG38', {
+    url: '/sg38?id',
+    templateUrl: 'templates/formSG38.html',
+    controller: 'formSG38Ctrl'
+  })
+
+  .state('formSG32', {
+    url: '/sg32?id',
+    templateUrl: 'templates/formSG32.html',
+    controller: 'formSG32Ctrl'
+  })
+
+  .state('formSG5', {
+    url: '/sg5?id',
+    templateUrl: 'templates/formSG5.html',
+    controller: 'formSG5Ctrl'
+  })
+
+  .state('formSG8', {
+    url: '/sg8?id',
+    templateUrl: 'templates/formSG8.html',
+    controller: 'formSG8Ctrl'
+  })
+
+  .state('formSG39', {
+    url: '/sg39?id',
+    templateUrl: 'templates/formSG39.html',
+    controller: 'formSG39Ctrl'
+  })
+
+    .state('sCLetter', {
+        url: '/scLetter?id',
+        templateUrl: 'templates/sCLetter.html',
+        controller: 'sCLetterCtrl'
+    })
 
 $urlRouterProvider.otherwise('/help')
 

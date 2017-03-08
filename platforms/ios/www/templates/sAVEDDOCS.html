@@ -1,5 +1,33 @@
 <ion-view title="SAVED DOCS" id="page6" style="">
   <ion-content padding="true" class="has-header">
-    <h1 id="sAVEDDOCS-heading3" style="color: rgb(0, 0, 0);">This section isn't finished yet.</h1>
+    <div id="sAVEDDOCS-markdown112" class="show-list-numbers-and-dots">
+      <p style="margin-top:0px;color:#666666;">
+        <strong>DRAFTS</strong>
+      </p>
+    </div>
+    <div class="spacer" style="height: 5px;background-color:#666666"></div>
+    <div class="spacer" style="height: 5px;"></div>
+    <div class="item item-body" id="sAVEDDOCS-list-item-container9" ng-repeat="forms in savedForms" style="">
+      <div id="sAVEDDOCS-markdown122" class="show-list-numbers-and-dots">
+        <p style="margin-top:0px;color:#000000;">{{forms.displayName}} : Saved {{forms.created | date:'dd-MM-yyyy'}}</p>
+      </div>
+      <button id="sAVEDDOCS-button23" ng-click="discard($index)" class="button button-stable button-small">Discard</button>
+      <button id="sAVEDDOCS-button24" ng-click="continue($index)" class="button button-positive button-small">Continue</button>
+    </div>
+    <div id="sAVEDDOCS-markdown212" ng-show="!savedForms.length" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">It looks like you don't have any drafts saved.</p>
+    </div>
+    <div id="sAVEDDOCS-markdown220" class="show-list-numbers-and-dots">
+        <p style="color:#666666;">
+            <strong>Frequently Accessed Documents</strong>
+        </p>
+    </div>
+    <div class="spacer" style="height: 5px;background-color:#666666"></div>
+    <ion-list id="sAVEDDOCS-list10">
+        <ion-item class="item-text-wrap" id="sAVEDDOCS-list-item89" ng-bind-html="doc.name" href-inappbrowser="{{doc.href}}" ng-repeat="doc in fad | filter: greaterThan('count', 2) | orderBy:'-count'" style="">{{doc.name}}</ion-item>
+    </ion-list>
+    <div id="sAVEDDOCS-markdown221" ng-show="!fadActive" style="text-align:center;" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Any document opened 3 times is considered "frequently accessed". They'll appear here.</p>
+    </div>
   </ion-content>
 </ion-view>
