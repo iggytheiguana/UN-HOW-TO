@@ -1,0 +1,26 @@
+page-portals {
+  .toolbar-background {
+    background-color:#009556;
+  }
+  .item-block{padding-left: 0;}
+  .item-inner{
+    border:1px solid #dedede !important;
+    .label{
+      position: relative;
+      margin:13px 0px 13px 13px;
+      img{
+        position: absolute;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      h2{
+        display: inline-block;
+        padding: 0px 0 0px 53px;
+        min-height: 40px;
+        white-space: pre-wrap;
+      }
+      
+    }
+  }
+}

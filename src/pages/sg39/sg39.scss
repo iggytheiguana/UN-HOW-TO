@@ -1,0 +1,37 @@
+page-sg39 {
+  .toolbar-background {
+    background-color:#4D91CA;
+  }
+  .list-wp{
+    .item-block{
+      border-top: 1px solid #dddddd !important; 
+      border-bottom: 1px solid #dddddd !important; 
+    }
+  }
+  .text-input-wp{
+    border: 0;
+  }
+
+  .list .item-md .checkbox-md{display: inline-block;margin:10px 18px 9px 15px;}
+  .list-ios .item-ios .checkbox-ios{display: inline-block; margin:9px 15px 9px 10px;}
+  .list-wp .item-wp .checkbox-wp{display: inline-block; margin:9px 15px 9px 10px;}
+  .item-block{padding-left: 0;}
+  .item{
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+
+  }
+  .item-inner{display: inline-block;border-bottom: 0 !important;}
+  .item-inner .label-md,.item-inner .label-ios{margin:17px 10px 0 0;}
+  .button{margin-bottom: 12px; text-transform: inherit;}
+  .button-light{background-color: #fff; color: #444;box-shadow: none;}
+}

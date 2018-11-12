@@ -1,0 +1,22 @@
+page-sg8 {
+.toolbar-background {
+background-color:#4D91CA;
+}
+
+.item-block{padding-left: 0;}
+.item{
+border-color: #ddd;
+background-color: #fff;
+color: #444;
+position: relative;
+z-index: 2;
+display: block;
+margin: -1px;
+padding: 2px;
+border-width: 1px;
+border-style: solid;
+font-size: 16px;
+}
+.button{margin-bottom: 12px; text-transform: inherit;}
+.button-light{background-color: #fff; color: #444;box-shadow: none;}
+}

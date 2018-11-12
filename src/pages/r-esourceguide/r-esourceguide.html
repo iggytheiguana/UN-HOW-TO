@@ -1,0 +1,54 @@
+<!--
+  Generated template for the REsourceguidePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>RESOURCE GUIDE</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+  <ion-content padding="true" class="has-header">
+      <form id="rESOURCEGUIDE-form1" class="list">
+          <ion-item class="item-divider" id="rESOURCEGUIDE-list-item-divider5"> Search</ion-item>
+          <ion-item>        
+                <ion-label> <ion-icon name="search"></ion-icon></ion-label>
+                <ion-input placeholder="Search UN.org" [(ngModel)]='search'  [ngModelOptions]="{standalone: true}" clearInput (ionChange)="searchDatabase()"></ion-input>
+            </ion-item>
+         <ion-item (click)="openURL(res.url,res.title_en)"  class="item-thumbnail-left item-text-wrap" *ngFor="let res of searchResults">
+              <img src="assets/imgs/resource-guide_inner.png">
+              <h2> {{ res.title_en }} </h2>
+          </ion-item>
+          <ion-item class="item-divider" id="rESOURCEGUIDE-list-item-divider3"> Documents</ion-item>
+          <ion-item class="item-thumbnail-left  item-text-wrap" id="rESOURCEGUIDE-list-item44" (click)="openURL('https://cdn.rawgit.com/ICT4SD/Forum_of_Small_States/039f9e59/Files/Instructions.docx','General UN Service Guidelines')">
+              <img src="assets/imgs/resource-guide_inner.png">
+              <h2>General UN Service Guidelines</h2>
+          </ion-item>
+          <ion-item class="item-thumbnail-left  item-text-wrap" id="rESOURCEGUIDE-list-item62" (click)="openURL('http://www.un.org/en/sections/documents/general-assembly-resolutions/index.html','General Assembly Resolutions')">
+              <img src="assets/imgs/resource-guide_inner.png">
+              <h2>General Assembly Resolutions</h2>
+          </ion-item>
+          <ion-item class="item-divider" id="rESOURCEGUIDE-list-item-divider4"> Weblinks</ion-item>
+          <ion-item class="item-thumbnail-left  item-text-wrap" id="rESOURCEGUIDE-list-item25" (click)="openURL('https://library.un.org/','Dag Hammarskjold Library ')">
+          <img src="assets/imgs/resource-guide_inner.png">
+          <h2>Dag Hammarskjold Library </h2>
+          </ion-item>
+          <ion-item class="item-thumbnail-left  item-text-wrap" id="rESOURCEGUIDE-list-item41" (click)="openURL('http://research.un.org/en/docs','UN Document Research Guide')">
+          <img src="assets/imgs/resource-guide_inner.png">
+          <h2>UN Document Research Guide</h2>
+          </ion-item>
+          <ion-item class="item-thumbnail-left  item-text-wrap" id="rESOURCEGUIDE-list-item71" (click)="openURL('http://www.un.org/en/member-states/index.html','Member States and Permanent Observers')">
+              <img src="assets/imgs/resource-guide_inner.png">
+              <h2>Member States and Permanent Observers</h2>
+          </ion-item>
+          <ion-item class="item-thumbnail-left" id="rESOURCEGUIDE-list-item91" (click)="openURL('https://documents.un.org/prod/ods.nsf/home.xsp','UN ODS')">
+              <img src="assets/imgs/resource-guide_inner.png">
+              <h2>UN ODS</h2>
+          </ion-item>
+      </form>
+  </ion-content>
+

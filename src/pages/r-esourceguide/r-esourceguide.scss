@@ -1,0 +1,32 @@
+page-r-esourceguide {
+  .toolbar-background {
+    background-color: #D7AD5D;
+  }
+  .item-block{padding-left: 0;}
+  .item-inner{
+    border:1px solid #dedede !important;
+    .label{
+      position: relative;
+      img{
+        position: absolute;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      h2{
+        display: inline-block;
+        padding: 0px 0 0px 50px;
+        min-height: 40px;
+        white-space: pre-wrap;
+      }
+      
+    }
+  }
+  .item-thumbnail-left .label{min-height: 65px;}
+  .item-inner .label{margin: 0px;padding: 8px 16px;}
+  .item-divider{min-height: 30px;}
+  .item-divider .label{background-color: #f5f5f5;font-weight: 500;}
+  .item:first-child{border-top-left-radius: 2px;border-top-right-radius: 2px;}
+  .item.item-block .item-inner{padding-right: 0px;}
+  .item-input .label{padding: 2px 0 0 16px}
+}

@@ -58,3 +58,5 @@ temp/
 hooks/
 platforms/
 plugins/
+www/
+.sourcemaps

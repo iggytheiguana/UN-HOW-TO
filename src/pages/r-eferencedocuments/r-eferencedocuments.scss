@@ -1,0 +1,25 @@
+page-r-eferencedocuments {
+  .toolbar-background {
+    background-color: #A16EAA;
+  }
+  .item-block{padding-left: 0;}
+  .item-inner{
+    border:1px solid #dedede !important;
+    .label{
+      position: relative;
+      img{
+        position: absolute;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      h2{
+        display: inline-block;
+        padding: 0px 0 0px 50px;
+        min-height: 40px;
+        white-space: pre-wrap;
+      }
+      
+    }
+  }
+}

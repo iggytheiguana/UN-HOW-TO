@@ -1,0 +1,30 @@
+page-s-aveddocs {
+  .toolbar-background {
+    background-color:#66686C;
+  }
+  
+  .item-block{padding-left: 0;}
+  .item-inner{
+    border:1px solid #dedede !important;
+    .label{
+      position: relative;
+      img{
+        position: absolute;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      h2{
+        display: inline-block;
+        padding: 0px 0 0px 50px;
+        min-height: 40px;
+        white-space: pre-wrap;
+      }
+      
+    }
+  }
+  .item .item-button span
+  .label{margin: 0px;padding: 16px;}
+  .item .item-button{padding: 2px 4px 1px;min-width: 28px;min-height: 30px;font-size: 12px;line-height: 26px;}
+  .item .item-button.button-stable{border-color: transparent;background-color: #f8f8f8;color: #444;}
+}

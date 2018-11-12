@@ -1,0 +1,67 @@
+<ion-content padding hide-nav-bar="true" hide-back-button="true" class="manual-ios-statusbar-padding welcome-block">
+      <div>
+        <a style="display:block;" href-inappbrowser="http://www.unitar.org/ny/">
+          <i><img src="assets/imgs/UNITAR.jpg" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;"></i>
+        </a>
+      </div>
+      <div class="home-list-view">
+        <ion-list id="home-list13">
+          <ion-item class="item-thumbnail-left  item-text-wrap item-thumb-col" id="home-list-item82" (click) = "refDoc()" ui-sref="rEFERENCEDOCUMENTS" style="border-color: #9D71AD !important; ">
+            <i><img src="assets/imgs/reference-documents.png"></i>
+            <h2 style="color: #9D71AD;">Reference Documents</h2>
+            <button ion-stop-event="click" id="home-button28" (click)="helpRefDoc()" class="button button-dark button-small" style="background-color: #9D71AD !important;">i</button>
+          </ion-item>
+        </ion-list>
+        <ion-list id="home-list14">
+            <ion-item class="item-thumbnail-left  item-text-wrap item-thumb-col" id="home-list-item83" (click)="unBodies()" style="border-color: #4D91CA !important; ">
+              <i><img src="assets/imgs/core-bodies.png"></i>
+              <h2 style="color: #4D91CA;">Core UN Bodies</h2>
+              <button ion-stop-event="click" id="home-button29" (click)="helpUnBodies()" class="button button-dark button-small" style="background-color: #4D91CA;">i</button>
+            </ion-item>
+          </ion-list>
+          <ion-list id="home-list15">
+            <ion-item class="item-thumbnail-left  item-text-wrap item-thumb-col" id="home-list-item84" (click)="resGuide()" style="border-color: #D2AC64 !important; ">
+              <i><img src="assets/imgs/resource-guide.png"></i>
+              <h2 style="color: #D2AC64;">Resource Guide</h2>
+              <button ion-stop-event="click" id="home-button30" (click)="helpResGuide()" class="button button-dark button-small" style="background-color: #D2AC64;">i</button>
+            </ion-item>
+          </ion-list>
+          <ion-list id="home-list16">
+            <ion-item class="item-thumbnail-left  item-text-wrap item-thumb-col" id="home-list-item86" (click)="forms()" style="border-color: #ec523a !important; ">
+              <i><img src="assets/imgs/forms-delegates.png"></i>
+              <h2 style="color: #ec523a;">Forms for Delegates</h2>
+              <button ion-stop-event="click" id="home-button31" (click)="helpForms()" class="button button-dark button-small" style="background-color: #ec523a; ">i</button>
+            </ion-item>
+          </ion-list>
+          <ion-list id="home-list17">
+            <ion-item class="item-thumbnail-left  item-text-wrap item-thumb-col" id="home-list-item87" (click)="saved()" style="border-color: #85f797 !important; ">
+              <i><img src="assets/imgs/saved-documents.png"></i>
+              <h2 style="color: #85f797;">Saved and Frequently Accessed Documents</h2>
+              <button ion-stop-event="click" id="home-button32" (click)="helpSaved()" class="button button-dark button-small" style="background-color: #85f797;">i</button>
+            </ion-item>
+          </ion-list>
+          <ion-list id="home-list9">
+            <ion-item class="item-thumbnail-left  item-text-wrap item-thumb-col" id="home-list-item88" (click)="portals()" style="border-color: #05955D !important; ">
+              <i>
+                <img src="assets/imgs/portals.png">
+              </i>
+              <h2 style="color: #05955D;">Portals</h2>
+              <button ion-stop-event="click" id="home-button33" (click)="helpPortals()" class="button button-dark button-small" style="background-color: #05955D;">i</button>
+            </ion-item>
+          </ion-list>
+      </div>
+      <div style="text-align:center;" class="social-icon">
+        <a (click)="openURL('https://twitter.com/UN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor','')">
+          <img src="assets/imgs/twitter.svg" >
+        </a>
+        <a (click)="openURL('https://www.instagram.com/unitednations/','')">
+          <img src="assets/imgs/insta.svg">
+        </a>
+        <!--<a (click)="inAppOpen('whatsapp://send?text=%20')">-->
+          <a (click)="inAppOpen('https://wa.me/?text=%20')">
+           
+          <img src="assets/imgs/whatsapp.svg">
+        </a>
+      </div>
+    </ion-content>
+  

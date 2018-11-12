@@ -1,0 +1,37 @@
+page-f-ormsfordelegates {
+  .toolbar-background {
+    background-color:#4D91CA;
+  }
+  .item-block{padding-left: 0;}
+  .item-inner{
+    border:1px solid #dedede !important;
+
+    .label{
+      position: relative;
+      padding-left: 20px;
+      img{
+        position: absolute;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      h2{
+        display: inline-block;
+        padding: 0px 0 0px 50px;
+        min-height: 40px;
+        white-space: pre-wrap;
+      }
+      p{
+        white-space: normal;
+      }
+      
+    }
+  }
+  .item-thumbnail-left .item-inner .label{min-height: 65px;}
+  .item-divider{min-height: 30px;background-color: #f5f5f5;}
+  .item-divider .label{background-color: #f5f5f5;padding: 8px 16px;font-weight: 500;}
+  .label{padding: 16px;margin:0px;}
+  .list .item-block .item-inner{padding-right: 0px;}
+  .list{margin:0px;}
+  
+}

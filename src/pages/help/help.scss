@@ -1,0 +1,23 @@
+page-help {
+  .platform-ios .manual-ios-statusbar-padding.help-block{padding-top:0;}
+  .help-block{background: #61a1c7;}
+  .help-block h2{color:#ffde00;text-align: center;font-weight: 600;font-size: 42px;line-height: 46px;}
+  .help-block .show-list-numbers-and-dots{padding-bottom: 30px;}
+  .help-block .show-list-numbers-and-dots p{font-size: 16px;line-height: 22px;color:#ffdd00;text-align: center;}
+  .help-block .help-logo img{display: block; width: 90%;height: auto;margin:0 auto;}
+  .help-block .dotted-logo{padding-bottom: 40px;}
+  .help-block .dotted-logo img{display: block; width: 80%; height: auto; margin:0 auto;}
+  .help-block .button-block{border-color:transparent;background-color:#ffde00;border:2px solid #ffde00;color:#61a1c7;width:270px;margin:0 auto;font-size:18px;font-weight:600;border-radius:16px;box-shadow: 0 2px 0 rgba(0,0,0,0.5);-webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.5);-moz-box-shadow: 0 2px 0 rgba(0,0,0,0.5);-ms-box-shadow: 0 2px 0 rgba(0,0,0,0.5);transition: 0.3s all;-webkit-transition:0.3s all;-moz-transition:0.3s all;-ms-transition:0.3s;}
+  .help-block .button-block:hover{border:2px solid #ffde00;background: transparent;color:#ffde00;}
+
+
+  @media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+        .help-block h2{font-size: 28px; margin-top: 0px;}
+        .help-block .dotted-logo, .help-block .show-list-numbers-and-dots{padding-bottom: 18px;}
+        .help-block .dotted-logo img{width:80%}
+        .help-block h2{line-height: 38px;}
+        .help-block .show-list-numbers-and-dots p{font-size: 16px; line-height: 20px;}
+        .button-positive{line-height: 34px; min-height: 34px;}
+
+  }
+}
