@@ -51,3 +51,10 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
+
+node_modules/
+tmp/
+temp/
+hooks/
+platforms/
+plugins/
